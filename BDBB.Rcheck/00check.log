@@ -1,0 +1,74 @@
+* using log directory 'E:/互联网+/新大陆杯/BDBB/BDBB.Rcheck'
+* using R version 4.2.3 (2023-03-15 ucrt)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: UTF-8
+* using options '--no-manual --as-cran'
+* checking for file 'BDBB/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'BDBB' version '0.1.0'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking serialization versions ... OK
+* checking whether package 'BDBB' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking for future file timestamps ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Malformed Description field: should contain one or more complete sentences.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... ERROR
+Error in file 'R/BDBB.R':
+  cannot open the connection
+Warning in file 'R/BDBB.R':
+  cannot open file 'E:/d:hg=+/f0e$'if//BDBB/BDBB.Rcheck/00_pkg_src/BDBB/R/BDBB.R': Invalid argument
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+GSB_SINGLE: no visible global function definition for 'rbeta'
+GSB_SINGLE: no visible global function definition for 'rbinom'
+GSB_SINGLE: no visible global function definition for 'dbeta'
+GSB_SINGLE: no visible global function definition for 'var'
+MCE: no visible global function definition for 'var'
+Undefined global functions or variables:
+  dbeta rbeta rbinom var
+Consider adding
+  importFrom("stats", "dbeta", "rbeta", "rbinom", "var")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running massageExamples to create 'BDBB-Ex.R' failed
+Error in find.package(package, lib.loc) : 
+  there is no package called 'BDBB'
+Calls: <Anonymous> -> Rd_db -> find.package
+Execution halted
+ NONE
+* checking for non-standard things in the check directory ... OK
+* checking for detritus in the temp directory ... OK
+* DONE
+Status: 2 ERRORs, 2 NOTEs

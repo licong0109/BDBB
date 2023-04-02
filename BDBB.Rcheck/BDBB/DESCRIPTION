@@ -1,0 +1,20 @@
+Package: BDBB
+Type: Package
+Title: BDBB:u A Novel Beta Distribution Based Biclustering Algorithm
+Version: 0.1.0
+Authors@R: person("Cong","Li",email = "2975776549@qq.com",role = c("aut","cre"))
+Maintainer: Licong <2975776549@qq.com>
+Description: 
+    this study proposed a novel biclustering algorithm BDBB. In the process of algorithm
+    design, the Gibbs sampler is employed to estimate the site label.
+    In view of the absence of a conjugate prior distribution of the
+    beta distribution, the method of moment estimation is cleverly
+    introduced in the process of parameter estimation of the beta
+    distribution
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-04-02 06:58:26 UTC; asus
+Author: Cong Li [aut, cre]
+Built: R 4.2.3; ; 2023-04-02 06:58:34 UTC; windows
