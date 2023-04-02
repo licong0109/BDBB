@@ -1,0 +1,45 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# BDBB
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of BDBB is to mine the co-methylation patterns hidden in the MeRIP-Seq data, which require the IP and input data matrices to be first approximated into methylation levels. It can also be used for pattern mining of data that follows a beta-mixture distribution.If you use BDBB for other types of data mining, the input data must be numeric matrices. 
+
+## Installation
+
+You can install the development version of BDBB like so:
+
+``` r
+library(usethis)
+library(devtools)
+install_github("licong0109/BDBB")
+# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(BDBB)
+## basic example code
+number_bicluster <- 6
+bic_row_labels <- c(rep(0,dim(mixture)[1]))
+
+simulate_multiple_GSB_object <- multiple_GSB(a = mixture,iteration = 2000,burn_in = 500,bic_row_labels = bic_row_labels,number_bicluster = number_bicluster)
+```

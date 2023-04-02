@@ -20,3 +20,10 @@ multiple_GSB(a, iteration, burn_in, bic_row_labels, number_bicluster)
 \description{
 Title
 }
+\examples{
+library(BDBB)
+number_bicluster <- 6
+bic_row_labels <- c(rep(0,dim(mixture)[1]))
+simulate_multiple_GSB_object <- multiple_GSB(a = mixture,iteration = 2000,burn_in = 500,bic_row_labels = bic_row_labels,number_bicluster = number_bicluster)
+
+}
